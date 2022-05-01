@@ -1,0 +1,29 @@
+    .btn-send{
+    color: #FFF;
+    background-color: #008080;
+    width: 80px;
+    border: 1px;
+    padding: 5px;
+    border-radius: 3px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 0 1px #CCC;
+    }
+
+    .btn-send:active{
+        box-shadow: 1px 1px 0 0 #1C1C1C;
+    }
+
+    .btn-reset{
+    color: #FFF;
+    background-color: #e71f1f;
+    width: 80px;
+    border: 1px;
+    padding: 5px;
+    border-radius: 3px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 0 1px #CCC;
+    }
+
+    .btn-reset:active{
+        box-shadow: 1px 1px 0 0 #1C1C1C;
+    }
