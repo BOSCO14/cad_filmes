@@ -1,16 +1,18 @@
 <link rel="stylesheet" href="assets/css/cadastrar.css">
 <div class="container">
     <br>
-    <h1>Cadastrar</h1>
-    <form method="POST" action="?router=cadastro/inserir/">
+    <h1>Editar</h1>
+    {% for registro in registros %}
+    <form method="POST" action="?router=cadastro/alterar/">
         <div class="form-group">
+        <input type="hidden" name="id" value="{{registro.id}}">
         <label>Título</label>
-        <input class="form-control" type="text" name="titulo" id="titulo" required>
+        <input class="form-control" type="text" name="titulo" id="titulo" value="{{registro.titulo}}" required>
         </div>
         <div class="form-group">
         <label>Categoria</label>
         <select class="form-control" name="categoria" id="categoria">
-            <option value="" selected>selecione</option>
+            <option value="{{registro.categoria}}" selected>{{registro.categoria}}</option>
             <option value="ACAO">ACAO</option>
             <option value="AVENTURA">AVENTURA</option>
             <option value="SUSPENSE">SUSPENSE</option>
@@ -20,14 +22,15 @@
         <div class="form-group">
         <label>Tipo</label>
         <select class="form-control" name="tipo" id="tipo">
-            <option value="" selected>selecione</option>
+            <option value="{{registro.tipo}}" selected>{{registro.tipo}}</option>
             <option value="DVD">DVD</option>
             <option value="BLU-RAY">BLU-RAY</option>
         </select>
         </div>
         <div class="form-group mt-3">
-        <input class="btn-send" type="submit" name="enviar" value="Enviar">
-        <input class="btn-reset" type="reset" name="limpar" value="Limpar">
+        <input class="btn-send" type="submit" name="alterar" value="Alterar">
+        <input class="btn-reset" type="reset" name="reverter" value="Reverter">
         </div>
     </form>
+    {% endfor %}
 </div>

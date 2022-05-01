@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'ea6a4f56c5080ccaa89a64a34998ec4c1c3b5647',
         'name' => 'mvc/bdfilmes',
         'dev' => true,
     ),
     'versions' => array(
         'mvc/bdfilmes' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'ea6a4f56c5080ccaa89a64a34998ec4c1c3b5647',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(

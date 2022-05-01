@@ -23,7 +23,7 @@
     top: 50%;
     transform: translate(0, -50%);
     color: #FFF;
-    
+    font-size: 18px;
 }
 
 .ul-menu{
@@ -46,6 +46,19 @@
     background-color: #050000;
     color: beige;
 }
+
+.dash{
+    color: #CCC;
+    font-size: 60px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+
+.ident{
+    color: #800000;
+}
+
 
 
 

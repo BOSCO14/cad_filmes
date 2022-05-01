@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="assets/css/cadastrar.css">
+<link rel="stylesheet" href="assets/css/arquivo.css">
+<div class="container">
+    <br>
+    <h1>Deletar</h1>
+    <br><br>
+    <h2>Deseja excluir esse registro?</h2>
+    {% for registro in registros %}
+    <form method="POST" action="?router=cadastro/excluir/">
+        <div class="form-group">
+        <input type="hidden" name="id" value="{{registro.id}}">
+        <hr>
+        
+            <h3 class="ident">{{registro.titulo}}</h3>
+        
+        <br><br><br>
+        <div class="form-group">
+        <input class="btn-reset" type="submit" name="deletar" value="Sim">
+        <button class="btn-send"><a href="?router=cadastro/consultar/"></a>Não</button>
+        </div>
+    </form>
+    {% endfor %}
+</div>
